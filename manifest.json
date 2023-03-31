@@ -1,0 +1,31 @@
+{
+  "vendor": "trainingpartnerfr",
+  "name": "total-items-available",
+  "version": "1.0.0",
+  "title": "Customized Application Example",
+  "description": "A didactic application that shows the various possibilities that a custom vtex IO application is capable of delivering",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "node": "6.x",
+    "docs": "0.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.css-handles": "0.x",
+    "vtex.product-context": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "*/"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
